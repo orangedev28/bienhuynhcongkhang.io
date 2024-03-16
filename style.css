@@ -1,148 +1,94 @@
-/* Reset css để loại bỏ các mặc định của trinh duyệt
-*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-     /* Thiet lap font chang cho trang web */
-    body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    /* /* Chia trung thành thai cat */
-    max-width: 1200px;
-    
-    margin: auto;
-    }
-    /* Phần tiêu đề trang web */
-    header {
-    background-color:#c7cc19;
-    color: #fff;
-    padding:20px;
-    text-align: center;
-    grid-column: 1 / span 2;
-    /* Trải đều qua cả hai cột */
-    }
-    /*Phần menu điều hướng */
-    nav {
-    background-color: #ffa486;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    grid-column: 1 / span 2;
-    }
-    nav ul {
-    list-style: none;
-    }
-    nav ul li {
-    display: inline;
-    margin-right: 20px;
-    }
-    
-    .product-list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* Hiển thị 3 sản phẩm trên mỗi hàng */
-        gap: 20px;
-        /* /* Khoang cach cua cac san pham */
-        padding: 20px;
-        grid-column: 1;
-        /* Chỉ nằm ở cột đầu tiên */
-    }
-    
-    .product-card{
-    background-color:#fff;
-    border: 1px solid Ddd;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    text-align: center; 
-    }/* Can giua noi dung truong son pham */
-    .product-card img {
-    max-width: 100%;
-    height: auto;
-    }
-    /* Phan sidebar */
-    .sidebar {
-        background-color: #199cff;
-        color: #fff;
-        padding: 10px;
-        grid-column: 2;
-        /* /* Chinamoco t thu hai */
-    }
-        .social-icons {
-        margin-top: 20px;
-        }
-        .social-icons a {
-        color: #fff;
-        text-decoration: none;
-        display: block;
-        margin-bottom: 10px;
-        }
-        /* Chỉnh lại bố cục cho màn hi nh thiết bị di động */
-        @media (max-width: 576px) {
-        .product-list {
-        grid-template-columns: 1fr;
-        /* Hiển thị một sản phẩm trên mỗi hàng */
-        }
-        .product-card {
-        width: 100%;
-        margin-bottom: 20px;
-        }
-        .sidebar {
-        grid-column: 1 / span 2;
-        /* Trải đều qua cả hai cột */
-        /* /* Ching li bo cu co phan footer */
-        }
-        .footer {
-        grid-template-columns: 1fr;
-        }
-    }
-    /* Phän footer */
-    /* Footer styling */
-    .footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-        display: grid;
-    }
-    
-    /* Style for each item within the footer */
-    .footer-item {
-        padding: 10px;
-    }
-    
-    /* Adjust layout for screens wider than 768px */
-    @media (min-width: 768px) {
-        .footer {
-            grid-template-columns: repeat(3, 1fr);
-            grid-column: 1 / span 3; /* Corrected the span to 3 */
-        }
-    }
-    
-        .button {
-        background-color: #04AA6D;
-        border: none;
-        color: White;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        }
-        .button1{
-            border-radius: 2px;
-        }
-        .button3{
-            border-radius: 8px;
-        }
-        .button4{
-            border-radius: 12px;
-        }
-        .button5{
-            border-radius: 50%;
-        }
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}

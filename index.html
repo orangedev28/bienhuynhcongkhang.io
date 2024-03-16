@@ -1,91 +1,584 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biện Huỳnh Công Khang</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-<h1>Biện Huỳnh Công Khang up git lần 2</h1>
-<hr>
-</header>
-<!-- Menu diêu huóng -->
-<nav>
-    <ul>
-        <li><a href="#">Trang Chủ</a></li>
-        <li><a href="#">Sản Phẩm</a></li>
-        <li><a href="#">Liên Hệ</a></li>
-    </ul>
-</nav>
-<div class="product-list">
-    <!-- Hien thi duy nhat mot san pham tren moi hang -->
-    <div class="product-card">
-    <img src="https://picsum.photos/id/684/600/400" alt="">
-    <h2>San Pham 1</h2>
-    <p>Mo ta san pham 1.</p>
-    <p>Gia: $100</p>
-    <button class="button button4">Mua Ngay</button>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="a4bt-bui2cv-container">
+        <div class="a4bt-bui2cv-a4bt-bui2cv">
+          <div class="a4bt-bui2cv-framecontent">
+            <div class="a4bt-bui2cv-right">
+              <div class="a4bt-bui2cv-groupnguoithamchieu">
+                <span class="a4bt-bui2cv-text">
+                  <span>
+                    <span>Anh - Trưởng phòng Marketing</span>
+                    <br />
+                    <span>Công ty Y</span>
+                    <br />
+                    <span>Điện thoại:...</span>
+                  </span>
+                </span>
+                <div class="a4bt-bui2cv-nguoithamchieu">
+                  <img
+                    src="public/external/rectangle25281-qgbl-200h.png"
+                    alt="Rectangle25281"
+                    class="a4bt-bui2cv-rectangle2"
+                  />
+                  <span class="a4bt-bui2cv-text007">
+                    <span>NGƯỜI THAM CHIẾU</span>
+                  </span>
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-groupthongtinthem">
+                <span class="a4bt-bui2cv-text009">
+                  <span>Điền các thông tin khác (nếu có)</span>
+                </span>
+                <div class="a4bt-bui2cv-thongtinthem">
+                  <img
+                    src="public/external/rectangle25278-q8a4-200h.png"
+                    alt="Rectangle25278"
+                    class="a4bt-bui2cv-rectangle21"
+                  />
+                  <span class="a4bt-bui2cv-text011">
+                    <span>THÔNG TIN THÊM</span>
+                  </span>
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-groupsothich">
+                <span class="a4bt-bui2cv-text013"><span>Đá bóng</span></span>
+                <span class="a4bt-bui2cv-text015"><span>Đọc sách</span></span>
+                <div class="a4bt-bui2cv-sothich">
+                  <span class="a4bt-bui2cv-text017"><span>SỞ THÍCH</span></span>
+                  <img
+                    src="public/external/rectangle25275-u1ef-200h.png"
+                    alt="Rectangle25275"
+                    class="a4bt-bui2cv-rectangle22"
+                  />
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-groupkynang">
+                <div class="a4bt-bui2cv-grouptienganh">
+                  <span class="a4bt-bui2cv-text019">
+                    <span>Tiếng Anh</span>
+                  </span>
+                  <div class="a4bt-bui2cv-frame8hinhtron1">
+                    <img
+                      src="public/external/ellipse2177-e8hr-200h.png"
+                      alt="Ellipse2177"
+                      class="a4bt-bui2cv-ellipse2"
+                    />
+                    <img
+                      src="public/external/ellipse3178-cp6-200h.png"
+                      alt="Ellipse3178"
+                      class="a4bt-bui2cv-ellipse3"
+                    />
+                    <img
+                      src="public/external/ellipse4179-a8qk-200h.png"
+                      alt="Ellipse4179"
+                      class="a4bt-bui2cv-ellipse4"
+                    />
+                    <img
+                      src="public/external/ellipse5180-ukfe-200h.png"
+                      alt="Ellipse5180"
+                      class="a4bt-bui2cv-ellipse5"
+                    />
+                    <img
+                      src="public/external/ellipse6181-na2u-200h.png"
+                      alt="Ellipse6181"
+                      class="a4bt-bui2cv-ellipse6"
+                    />
+                    <img
+                      src="public/external/ellipse7182-u7z-200h.png"
+                      alt="Ellipse7182"
+                      class="a4bt-bui2cv-ellipse7"
+                    />
+                    <img
+                      src="public/external/ellipse8183-j51-200h.png"
+                      alt="Ellipse8183"
+                      class="a4bt-bui2cv-ellipse8"
+                    />
+                    <img
+                      src="public/external/ellipse9184-a9ch-200h.png"
+                      alt="Ellipse9184"
+                      class="a4bt-bui2cv-ellipse9"
+                    />
+                    <img
+                      src="public/external/ellipse10185-6gt-200h.png"
+                      alt="Ellipse10185"
+                      class="a4bt-bui2cv-ellipse10"
+                    />
+                    <img
+                      src="public/external/ellipse11186-6m6r-200h.png"
+                      alt="Ellipse11186"
+                    />
+                  </div>
+                </div>
+                <div class="a4bt-bui2cv-grouptinhocvp">
+                  <span class="a4bt-bui2cv-text021">
+                    <span>Tin học văn phòng</span>
+                  </span>
+                  <div class="a4bt-bui2cv-frame8hinhtron11">
+                    <img
+                      src="public/external/ellipse2151-j69-200h.png"
+                      alt="Ellipse2151"
+                      class="a4bt-bui2cv-ellipse21"
+                    />
+                    <img
+                      src="public/external/ellipse3152-ntc-200h.png"
+                      alt="Ellipse3152"
+                      class="a4bt-bui2cv-ellipse31"
+                    />
+                    <img
+                      src="public/external/ellipse4153-m9zq-200h.png"
+                      alt="Ellipse4153"
+                      class="a4bt-bui2cv-ellipse41"
+                    />
+                    <img
+                      src="public/external/ellipse5154-zzf-200h.png"
+                      alt="Ellipse5154"
+                      class="a4bt-bui2cv-ellipse51"
+                    />
+                    <img
+                      src="public/external/ellipse6155-wvzs-200h.png"
+                      alt="Ellipse6155"
+                      class="a4bt-bui2cv-ellipse61"
+                    />
+                    <img
+                      src="public/external/ellipse7156-ulra3-200h.png"
+                      alt="Ellipse7156"
+                      class="a4bt-bui2cv-ellipse71"
+                    />
+                    <img
+                      src="public/external/ellipse8157-pdn-200h.png"
+                      alt="Ellipse8157"
+                      class="a4bt-bui2cv-ellipse81"
+                    />
+                    <img
+                      src="public/external/ellipse9158-e20c-200h.png"
+                      alt="Ellipse9158"
+                      class="a4bt-bui2cv-ellipse91"
+                    />
+                    <img
+                      src="public/external/ellipse10159-ph9-200h.png"
+                      alt="Ellipse10159"
+                      class="a4bt-bui2cv-ellipse101"
+                    />
+                    <img
+                      src="public/external/ellipse11160-v0p9-200h.png"
+                      alt="Ellipse11160"
+                      class="a4bt-bui2cv-ellipse111"
+                    />
+                  </div>
+                </div>
+                <div class="a4bt-bui2cv-kynang">
+                  <span class="a4bt-bui2cv-text023"><span>KỸ NĂNG</span></span>
+                  <img
+                    src="public/external/rectangle25272-2b2-200h.png"
+                    alt="Rectangle25272"
+                    class="a4bt-bui2cv-rectangle23"
+                  />
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-groupmuctieunghenghiep">
+                <span class="a4bt-bui2cv-text025">
+                  <span>
+                    <span>Áp dụng những kinh nghiệm về kỹ</span>
+                    <br />
+                    <span>năng bán hàng và sự hiểu biêt về thị</span>
+                    <br />
+                    <span>trường để trở thành một nhân viên</span>
+                    <br />
+                    <span>bán hàng chuyên nghiệp mang đến</span>
+                    <br />
+                    <span>nhiều giá trị cho khách hàng. Từ đó</span>
+                    <br />
+                    <span>giúp Công ty tăng số lượng khách</span>
+                    <br />
+                    <span>hàng và mở rộng tập khách hàng</span>
+                  </span>
+                </span>
+                <div class="a4bt-bui2cv-groupmuctieunn">
+                  <img
+                    src="public/external/rectangle31103-wa6s-200h.png"
+                    alt="Rectangle31103"
+                    class="a4bt-bui2cv-rectangle3"
+                  />
+                  <span class="a4bt-bui2cv-text040">
+                    <span>
+                      <span>MỤC TIÊU NGHỀ</span>
+                      <br />
+                      <span>NGHIỆP</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="a4bt-bui2cv-left">
+              <div class="a4bt-bui2cv-groupgiaithuong">
+                <span class="a4bt-bui2cv-text045">
+                  <span class="a4bt-bui2cv-text046">
+                    <span>2014</span>
+                    <br />
+                    <span></span>
+                  </span>
+                  <span>NHÂN VIÊN XUẤT SẮC NĂM CÔNG TY Y</span>
+                </span>
+                <div class="a4bt-bui2cv-giaithuong">
+                  <span class="a4bt-bui2cv-text051">
+                    <span>GIẢI THƯỞNG</span>
+                  </span>
+                  <img
+                    src="public/external/rectangle25266-ow3-200h.png"
+                    alt="Rectangle25266"
+                    class="a4bt-bui2cv-rectangle24"
+                  />
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-groupchungchi">
+                <span class="a4bt-bui2cv-text053">
+                  <span class="a4bt-bui2cv-text054">
+                    <span>2013</span>
+                    <br />
+                    <span></span>
+                  </span>
+                  <span>GIẢI NHẤT TÀI NĂNG VIỆT NAM</span>
+                </span>
+                <div class="a4bt-bui2cv-chungchi">
+                  <span class="a4bt-bui2cv-text059">
+                    <span>CHỨNG CHỈ</span>
+                  </span>
+                  <img
+                    src="public/external/rectangle25263-dojg-200h.png"
+                    alt="Rectangle25263"
+                    class="a4bt-bui2cv-rectangle25"
+                  />
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-grouphoatdong">
+                <div class="a4bt-bui2cv-contenttinhnguyen">
+                  <img
+                    src="public/external/duongchaydoc1117-sb9-200w.png"
+                    alt="duongchaydoc1117"
+                    class="a4bt-bui2cv-duongchaydoc"
+                  />
+                  <span class="a4bt-bui2cv-text061">
+                    <span class="a4bt-bui2cv-text062">
+                      <span>Tình nguyện viên</span>
+                      <br />
+                      <span></span>
+                    </span>
+                    <span>
+                      <span>
+                        Tập hợp các món quà và phân phát tới người vô gia cư
+                      </span>
+                      <br />
+                      <span>
+                        - Chia sẻ, động viên họ vượt qua giai đoạn khó khăn,
+                        giúp họ có những suy nghĩ lạc quan
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <div class="a4bt-bui2cv-group9">
+                  <span class="a4bt-bui2cv-text070">
+                    <span>NHÓM TÌNH NGUYỆN T</span>
+                  </span>
+                  <div class="a4bt-bui2cv-nutcongtron">
+                    <img
+                      src="public/external/ellipse18296-f1hq-200w.png"
+                      alt="Ellipse18296"
+                      class="a4bt-bui2cv-ellipse1"
+                    />
+                    <span class="a4bt-bui2cv-text072">+</span>
+                  </div>
+                </div>
+                <span class="a4bt-bui2cv-text073">
+                  <span>10/2013 &gt;&gt; 08/2014</span>
+                </span>
+                <div class="a4bt-bui2cv-hoatdong">
+                  <span class="a4bt-bui2cv-text075">
+                    <span>HOẠT ĐỘNG</span>
+                  </span>
+                  <img
+                    src="public/external/rectangle25260-zpf4-200h.png"
+                    alt="Rectangle25260"
+                    class="a4bt-bui2cv-rectangle26"
+                  />
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-groupkinhnghiemlv">
+                <div class="a4bt-bui2cv-groupcuahangz">
+                  <div class="a4bt-bui2cv-contentcuahangz">
+                    <img
+                      src="public/external/duongchaydoc1124-9ipi-200w.png"
+                      alt="duongchaydoc1124"
+                      class="a4bt-bui2cv-duongchaydoc1"
+                    />
+                    <span class="a4bt-bui2cv-text077">
+                      <span class="a4bt-bui2cv-text078">
+                        <span>Nhân viên bán hàng</span>
+                        <br />
+                        <span></span>
+                      </span>
+                      <span>
+                        <span>
+                          - Bán hàng trực tiếp tại cửa hàng cho người nước ngoài
+                          và người Việt
+                        </span>
+                        <br />
+                        <span>
+                          - Quảng bá sản phẩm thông qua các ấn phẩm truyền thông
+                          banner,
+                        </span>
+                        <br />
+                        <span>poster, tờ rơi...</span>
+                        <br />
+                        <span>- Lập báo cáo sản lượng bán ra hàng ngày</span>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="a4bt-bui2cv-group8">
+                    <span class="a4bt-bui2cv-text090">
+                      <span>CỬA HÀNG Z</span>
+                    </span>
+                    <div class="a4bt-bui2cv-nutcongtron1">
+                      <img
+                        src="public/external/ellipse18293-u0j5-200w.png"
+                        alt="Ellipse18293"
+                        class="a4bt-bui2cv-ellipse11"
+                      />
+                      <span class="a4bt-bui2cv-text092">+</span>
+                    </div>
+                  </div>
+                  <span class="a4bt-bui2cv-text093">
+                    <span>10/2010 &gt;&gt; 05/2014</span>
+                  </span>
+                </div>
+                <div class="a4bt-bui2cv-groupcongtyy">
+                  <div class="a4bt-bui2cv-contentcuahangz1">
+                    <img
+                      src="public/external/duongchaydoc1130-kq4-200w.png"
+                      alt="duongchaydoc1130"
+                      class="a4bt-bui2cv-duongchaydoc2"
+                    />
+                    <span class="a4bt-bui2cv-text095">
+                      <span class="a4bt-bui2cv-text096">
+                        <span>Nhân viên bán hàng</span>
+                        <br />
+                        <span></span>
+                      </span>
+                      <span>
+                        <span>
+                          - Hỗ trợ viết bài quảng cáo sản phẩm qua kênh
+                          facebook, các forum...
+                        </span>
+                        <br />
+                        <span>
+                          - Giới thiệu, tư vấn sản phẩm, giải đáp các vấn đề
+                          thắc mắc của khách hàng qua điện thoại và email
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="a4bt-bui2cv-group7">
+                    <span class="a4bt-bui2cv-text104">
+                      <span>CÔNG TY Y</span>
+                    </span>
+                    <div class="a4bt-bui2cv-nutcongtron2">
+                      <img
+                        src="public/external/ellipse18287-ph5s-200w.png"
+                        alt="Ellipse18287"
+                        class="a4bt-bui2cv-ellipse12"
+                      />
+                      <span class="a4bt-bui2cv-text106">+</span>
+                    </div>
+                  </div>
+                  <span class="a4bt-bui2cv-text107">
+                    <span>03/2015 &gt;&gt; Hiện tại</span>
+                  </span>
+                </div>
+                <div class="a4bt-bui2cv-kinhnghiemlamviec">
+                  <span class="a4bt-bui2cv-text109">
+                    <span>KINH NGHIỆM LÀM VIỆC</span>
+                  </span>
+                  <img
+                    src="public/external/rectangle25223-6p3-200h.png"
+                    alt="Rectangle25223"
+                    class="a4bt-bui2cv-rectangle27"
+                  />
+                </div>
+              </div>
+              <div class="a4bt-bui2cv-grouphocvan">
+                <div class="a4bt-bui2cv-contentdaihocx">
+                  <div class="a4bt-bui2cv-detaildaihoc">
+                    <img
+                      src="public/external/duongchaydoc5219-hrkp-200w.png"
+                      alt="duongchaydoc5219"
+                      class="a4bt-bui2cv-duongchaydoc3"
+                    />
+                    <span class="a4bt-bui2cv-text111">
+                      <span class="a4bt-bui2cv-text112">
+                        <span>Quản trị Doanh nghiệp</span>
+                        <br />
+                        <span></span>
+                      </span>
+                      <span>Tốt nghiệp loại Giỏi, điểm trung bình 8.0</span>
+                    </span>
+                  </div>
+                  <span class="a4bt-bui2cv-text117">
+                    <span>ĐẠI HỌC X</span>
+                  </span>
+                  <span class="a4bt-bui2cv-text119">
+                    <span>10/2010 &gt;&gt; 05/2014</span>
+                  </span>
+                  <div class="a4bt-bui2cv-nutcongtron3">
+                    <img
+                      src="public/external/ellipse18290-e7i-200h.png"
+                      alt="Ellipse18290"
+                      class="a4bt-bui2cv-ellipse13"
+                    />
+                    <span class="a4bt-bui2cv-text121">+</span>
+                  </div>
+                </div>
+                <div class="a4bt-bui2cv-hocvan">
+                  <span class="a4bt-bui2cv-text122"><span>HỌC VẤN</span></span>
+                  <img
+                    src="public/external/rectangle25211-n8qr-200h.png"
+                    alt="Rectangle25211"
+                    class="a4bt-bui2cv-rectangle28"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="a4bt-bui2cv-frameheader">
+            <img
+              src="public/external/rectangleheader1162-lv3k-200h.png"
+              alt="Rectangleheader1162"
+              class="a4bt-bui2cv-rectangleheader"
+            />
+            <div class="a4bt-bui2cv-groupthongtin">
+              <div class="a4bt-bui2cv-group6">
+                <img
+                  src="public/external/ellipsengaysinh1160-odp-200h.png"
+                  alt="Ellipsengaysinh1160"
+                  class="a4bt-bui2cv-ellipsengaysinh"
+                />
+                <span class="a4bt-bui2cv-text124">
+                  <span>fb.com/khangkhang</span>
+                </span>
+              </div>
+              <div class="a4bt-bui2cv-group5">
+                <img
+                  src="public/external/ellipsengaysinh1154-zjdq-200h.png"
+                  alt="Ellipsengaysinh1154"
+                  class="a4bt-bui2cv-ellipsengaysinh1"
+                />
+                <span class="a4bt-bui2cv-text126">
+                  <span>khangtoriko990@gmail.com</span>
+                </span>
+              </div>
+              <div class="a4bt-bui2cv-group4">
+                <img
+                  src="public/external/ellipsengaysinh1148-orti-200h.png"
+                  alt="Ellipsengaysinh1148"
+                  class="a4bt-bui2cv-ellipsengaysinh2"
+                />
+                <span class="a4bt-bui2cv-text128"><span>Nam</span></span>
+              </div>
+              <div class="a4bt-bui2cv-group3">
+                <img
+                  src="public/external/ellipsengaysinh1157-qtzr-200h.png"
+                  alt="Ellipsengaysinh1157"
+                  class="a4bt-bui2cv-ellipsengaysinh3"
+                />
+                <span class="a4bt-bui2cv-text130">
+                  <span>TP Thủ Đức, TP Hồ Chí Minh</span>
+                </span>
+              </div>
+              <div class="a4bt-bui2cv-group2">
+                <img
+                  src="public/external/ellipsengaysinh1151-4cf9-200h.png"
+                  alt="Ellipsengaysinh1151"
+                  class="a4bt-bui2cv-ellipsengaysinh4"
+                />
+                <span class="a4bt-bui2cv-text132"><span>098234xxxx</span></span>
+              </div>
+              <div class="a4bt-bui2cv-group1">
+                <img
+                  src="public/external/ellipsengaysinh1145-ma3r-200h.png"
+                  alt="Ellipsengaysinh1145"
+                  class="a4bt-bui2cv-ellipsengaysinh5"
+                />
+                <span class="a4bt-bui2cv-text134"><span>02/08/2002</span></span>
+              </div>
+              <span class="a4bt-bui2cv-text136">
+                <span>Nhân viên kinh doanh</span>
+              </span>
+              <span class="a4bt-bui2cv-text138">
+                <span>BIỆN HUỲNH CÔNG KHANG</span>
+              </span>
+              <img
+                src="public/external/anhdaidien1140-ertu-200w.png"
+                alt="anhdaidien1140"
+                class="a4bt-bui2cv-anhdaidien"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Bo sung them san pham -->
-    <div class="product-card">
-    <img src="https://picsum.photos/id/1025/600/400"
-    alt="">
-    <h2>San Pham 2</h2>
-    <p>Mo ta san pham 2.</p>
-    <p>Gia: $150</p>
-    <button class="button button4">Mua Ngay</button>
-    </div>
-    <div class="product-card">
-    <img src="https://picsum.photos/id/1060/600/400" alt="">
-    <h2>San Pham 3</h2>
-    <p>Mo ta san pham 3.</p>
-    <p>Gia: $120</p>
-    <button class="button button4">Mua Ngay</button>
-    </div>
-    <div class="product-card">
-    <img src="https://picsum.photos/id/30/600/400"
-    alt="">
-    <h2>San Pham 4</h2>
-    <p>Mo ta san pham 4.</p>
-    <p>Gia: $80</p>
-    <button class="button button4">Mua Ngay</button>
-    </div>
-    <div class="product-card">
-    <img src="https://picsum.photos/id/431/600/400" alt="">
-    <h2>San Pham 5</h2>
-    <p>M6 ta san pham 5.</p>
-    <p>Gia: $200</p>
-    <button class="button button4">Mua Ngay</button>
-    </div>
-</div>
-<!-- Sidebar -->
-<div class="sidebar">
-    <!-- Hiển thị thanh sidebar ở phía dưới sản phẩm trên di động -->
-    <div class="social-icons">
-        <a href="#">Biện Huỳnh Công Khang</a>
-        <a href="#">2011060425</a>
-        <a href="https://web.facebook.com/peacock.khang">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-    </div>
-</div>
-    <!-- Phần footer -->
-    <div class="footer">
-    <div class="footer-item">
-    <h3>cột 1</h3>
-    <p>Noi dung cột 1.</p>
-    </div>
-    <div class="footer-item">
-    <h3>cột 2</h3>
-    <p>Noi dung cột 2.</p>
-    </div>
-    <div class="footer-item">
-    <h3>cột 3</h3>
-    <p>Noi dung cột 3.</p>
-    </div>
-    </div>
-</body>
+  </body>
 </html>
